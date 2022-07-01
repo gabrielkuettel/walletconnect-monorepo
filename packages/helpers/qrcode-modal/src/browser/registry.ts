@@ -42,6 +42,48 @@ const officialAlgorandWallet: IAppEntry = {
   },
 };
 
+const deflyWallet: IAppEntry = {
+  // hex encoding of 32 random bytes
+  id: "d60449e250b2be1d5387f31eb323eaaca3a55ccf888999da09d9546c86cda073",
+  name: "Defly Wallet",
+  homepage: "https://defly.app",
+  chains: [
+    // need to change once a standard emerges, perhaps https://github.com/ChainAgnostic/CAIPs/pull/55
+    "algorand",
+  ],
+  // randomly generated UUID
+  image_id: "d917ff98-f307-4422-94b5-9bee0fc19ee4",
+  image_url: {
+    sm: "https://static.defly.app/app-icons/defly-walletconnect-128.png",
+    md: "https://static.defly.app/app-icons/defly-walletconnect-128.png",
+    lg: "https://static.defly.app/app-icons/defly-walletconnect-128.png",
+  },
+  app: {
+    browser: "",
+    ios: "https://apps.apple.com/us/app/defly/id1602672723",
+    android: "https://play.google.com/store/apps/details?id=io.blockshake.defly.app",
+    mac: "",
+    windows: "",
+    linux: "",
+  },
+  mobile: {
+    native: "defly-wc:",
+    universal: "",
+  },
+  desktop: {
+    native: "",
+    universal: "",
+  },
+  metadata: {
+    shortName: "Defly",
+    colors: {
+      primary: "rgb(0, 0, 0)",
+      secondary: "",
+    },
+  },
+};
+
 export const registry: IAppRegistry = {
   [officialAlgorandWallet.id]: officialAlgorandWallet,
+  [deflyWallet.id]: deflyWallet,
 };
