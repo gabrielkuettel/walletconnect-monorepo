@@ -25,4 +25,6 @@ To release a new version of the `algorand-walletconnect-qrcode-modal` package, f
 
 4. Run [`npm publish`](https://docs.npmjs.com/cli/v8/commands/npm-publish) to publish the release to npm. **NOTE:** if you intend to publish a prerelease, you **MUST** use the `tag` option to specify the release channel, which is "latest" by default.
 
-5. Update downstream repos. The repos https://github.com/algorand/walletconnect-example-dapp and https://github.com/jasonpaulos/algorand-walletconnect-example-dapp use this package, so it's usually a good idea to update the dependency in these repos as well.
+5. Go to https://github.com/algorand/walletconnect-monorepo/releases and draft a new release. If you have not already created a tag with `npm version` or through other means, create one for the release now. The release body should contain changelog-level information about the new release.
+
+6. Update downstream repos. The repos https://github.com/algorand/walletconnect-example-dapp and https://github.com/jasonpaulos/algorand-walletconnect-example-dapp use this package, so it's usually a good idea to update the dependency in these repos as well.
