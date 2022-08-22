@@ -19,12 +19,12 @@ To release a new version of the `algorand-walletconnect-qrcode-modal` package, f
 
 3. Point your terminal to `packages/helpers/qrcode-modal`.
 
-3. (Optional) For testing purposes, run `npm pack` to build an archived version of the package that can be installed as a dependency elsewhere. This will be called something similar to `algorand-walletconnect-qrcode-modal-1.8.0.tgz`.
+4. (Optional) For testing purposes, run `npm pack` to build an archived version of the package that can be installed as a dependency elsewhere. This will be called something similar to `algorand-walletconnect-qrcode-modal-1.8.0.tgz`.
    
    This step is also useful because it shows you a list of files that will be included in the release. You can verify this lists looks like you'd expect (make sure it includes the `dist` folder!).
 
-4. Run [`npm publish`](https://docs.npmjs.com/cli/v8/commands/npm-publish) to publish the release to npm. **NOTE:** if you intend to publish a prerelease, you **MUST** use the `tag` option to specify the release channel, which is "latest" by default.
+5. Run [`npm publish`](https://docs.npmjs.com/cli/v8/commands/npm-publish) to publish the release to npm. **NOTE:** if you intend to publish a prerelease, you **MUST** use the `tag` option to specify the release channel, which is "latest" by default.
 
-5. Go to https://github.com/algorand/walletconnect-monorepo/releases and draft a new release. If you have not already created a tag with `npm version` or through other means, create one for the release now. The release body should contain changelog-level information about the new release.
+6. Go to https://github.com/algorand/walletconnect-monorepo/releases and draft a new release. If you have not already created a tag with `npm version` or through other means, create one for the release now. The release body should contain changelog-level information about the new release.
 
-6. Update downstream repos. The repos https://github.com/algorand/walletconnect-example-dapp and https://github.com/jasonpaulos/algorand-walletconnect-example-dapp use this package, so it's usually a good idea to update the dependency in these repos as well.
+7. Update downstream repos. The repos https://github.com/algorand/walletconnect-example-dapp and https://github.com/jasonpaulos/algorand-walletconnect-example-dapp use this package, so it's usually a good idea to update the dependency in these repos as well.
